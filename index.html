@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- This head section contains all the invisible information about the page -->
 <head>
-    <meta charset="UTF-8">
+    <title>Welcome to Retro Park</title>
+    <meta name="description" content="This is a website for a Retro Theme Park">
+    <meta name="author" content="B. Georgieva, A. Milosevic">
+    <meta name="keywords" content="Retro Vintage 'Back in time' 'Theme Park'"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">       
 </head>
 
+<!-- This body section contains the structure for all the visble content -->
 <body>
+    <!-- This is the header that is repeated across pages -->
     <header>
         <img src="images/logo.png" alt="Logo">
-        <div class="languageSelection">
+        <div id="languageSelection">
             <a href="">
-                <img src="images/language.png" alt="British Flag">
+                <img src="images/united-kingdom.png" height="30" alt="UK Flag">
             </a>
         </div>
-        <div class="searchContaine">
+        <div id="searchContainer">
             <form>
                 <input name="search" type="text">
-                <input type="image" src="search.png" alt="Search Icon" width="48" height="48">
+                <input type="image" src="images/magnifying-glass.png" alt="Search Icon" height="30">
             </form>
         </div>
     </header>
+    <!-- This is the primary navigation  -->
     <nav>
         <a href="/index.html">Home</a>
         <a href="/attractions.html">Attractions</a>
         <a href="/offers.html">Offers</a>
-        <a href="/accomodation.html">Places to stay</a>
+        <a href="">Places to stay</a>
     </nav>
+    
+    <!-- This is the primary navigation  -->
     <section class="welcome">
-        <img src="images/welcome.png" alt="Retro theme park">
+        <img src="images/ferris-wheel.jpg" width="700" alt="Retro theme park ferris wheel">
         <h1>Welcome back in time</h1>
         <h3>New season opens on March 23rd</h3>
-        <div class="actionButtons">
+        <div id="actionButtons">
             <button type="button" class="actionButton">Buy a pass</button>
             <button type="button" class="actionButton">Buy a ticket</button>
         </div>
     </section>
-    <div class="bookingForm">
+    
+    <!-- This is the booking form  -->
+    <div id="bookingForm">
         <form>
             <input type="date">
             <input type="number" name="Adults" id="adultsNumber">
@@ -46,54 +56,69 @@
             <input type="submit" value="Book Now">
         </form>
     </div>
-    <section class="newsAndAttractions">
+
+    <!-- This is the news and attractions section  -->
+    <section id="newsAndAttractions">
         <h1>News and attractions</h1>
-        <h1>News and attractions</h1>
-        <div class="featuredAttraction">
-            <img src="images/carnival-poster.jpg" alt="🙈">
-            <h2>Title of a featured attraction</h2>
-            <p>Description</p>
-            <button name="Learn More"></button>
+        
+        <!-- This is the featured attraction card  -->
+        <div id="featuredAttraction">
+            <img src="images/creepy-carrousel.jpg" height=400 alt="Creepy retro carrousel">
+            <h2>Goosebumps</h2>
+            <p>Dive in the dark and unexplored part of the past by testing your limits in the theme park's newest addition!</p>
+            <button name="Learn More">Learn More</button>
         </div>
-        <div class="attractionCards">
+        
+        <!-- This is the container for attraction cards  -->        
+        <div id="attractionCards">
+            
+            <!-- This is the attraction card  -->  
             <div class="attractionCard">
-                <img src="images/carrousel.jpg" width="200" height="200" alt="Carrousel">
-                <h3>Lorem</h3>
-                <button class="learnMoreButton" name="Learn More"></button>
+                <img src="images/carrousel.jpg" width="200" 
+                height="200" alt="Carrousel">
+                <h3>Vintage Carrousel</h3>
+                <button class="learnMoreButton" name="Learn More">Learn More</button>
             </div>
             <div class="attractionCard">
-                <img src="images/night-lights.jpg" width="200" height="200" alt="Night Lights">
-                <h3>Lorem</h3>
-                <button class="learnMoreButton" name="Learn More"></button>
+                <img src="images/night-lights.jpg" width="200" 
+                height="200" alt="Night Lights">
+                <h3>Starry Night</h3>
+                <button class="learnMoreButton" name="Learn More">Learn more</button>
             </div>
             <div class="attractionCard">
                 <img src="images/pony.jpg" width="200" height="200" alt="Pony">
-                <h3>Lorem</h3>
-                <button class="learnMoreButton" name="Learn More"></button>
+                <h3>Round and Round</h3>
+                <button class="learnMoreButton" name="Learn More">Learn more</button>
             </div>
         </div>
     </section>
+    <!-- This is the social media strip section  -->  
     <section class="socialMedia">
         <h1>Social Media Channels</h1>
-        <div class="socialMediaImagesContainer">
+        
+        <!-- This is the container for social media images -->  
+        <div id="socialMediaImagesContainer">
             <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/socialMedia1.png" alt="">
+                <img class="socialMediaImage" src="images/sm-cute-girl.jpg" width="150" height="150" alt="Cute girl in theme park">
             </div>
             <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/socialMedia2.png" alt="">
+                <img class="socialMediaImage" src="images/sm-ferris-wheel-up-close.jpg" width="150" height="150" alt="Ferris wheel from up close">
             </div>
             <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/socialMedia3.png" alt="">
+                <img class="socialMediaImage" src="images/sm-girl-at-carrousel.jpg" width="150" height="150" alt="Young girl at carrousel">
             </div>
             <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/socialMedia4.png" alt="">
+                <img class="socialMediaImage" src="images/sm-teen-at-carrousel.jpg" width="150" height="150" alt="Teen at carrousel">
             </div>
             <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/socialMedia5.png" alt="">
+                <img class="socialMediaImage" src="images/sm-turn-around-crazy.jpg" width="150" height="150" alt="People at adrenaline heavy them park ride">
             </div>
         </div>
     </section>
+
+    <!-- This is the footer to repeated opn every page  -->  
     <footer>
+        <!-- List of links in the footer  -->  
         <div class="footerLinkList">
             <h3>About us</h3>
             <ul>
@@ -110,30 +135,37 @@
                 <li><a href="">Legal Notices</a></li>
             </ul>
         </div>
-        <div class="socialMediaButtons">
+        <!-- This is the a set of social media logos with link  -->  
+        <div id="socialMediaButtons">
             <a href="http://tripadvisor.com">
-                <img src="images/tripadvisor.png" alt="Trip Advisor Logo">
+                <img src="images/tripadvisor-logo.png" width="50" height="50" alt="Trip Advisor Logo">
             </a>
             <a href="http://facebook.com">
-                <img src="images/facebook.png" alt="Facebook Logo">
+                <img src="images/facebook-logo.png" width="50" height="50" alt="Facebook Logo">
             </a>
             <a href="http://twitter.com">
-                <img src="images/twitter.png" alt="Twitter Logo">
+                <img src="images/twitter-logo.png" width="50" height="50" alt="Twitter Logo">
             </a>
             <a href="http://instagram.com">
-                <img src="images/instagram.png" alt="Instagram Logo">
+                <img src="images/instagram-logo.png" width="50" height="50" alt="Instagram Logo">
             </a>
         </div>
-        <div class="contactInfo">
+        <!-- This is the contact info section -->  
+        <div id="contactInfo">
             <h3>Contact Us</h3>
             <address>
                 Write us at: <a href="mailto:feedback@retropark.com">feedback@retropark.com</a><br>
                 Or give us a call: <a href="tel:+13115552368">(311) 555-2368</a>
               </address>
         </div>
-        <div class="copyright">
+        <!-- This is the copyright section -->  
+        <div id="copyright">
             <p><b>Copyright (c) Retro Park 2019</b></p>
         </div>
+
+        <!-- This are the credits for the photo resources used-->
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Logo made with <a href="/en/" title="Free Online Logo Maker">DesignEvo</a></div>
     </footer>
 </body>
 
