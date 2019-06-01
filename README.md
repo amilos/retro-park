@@ -1,4 +1,4 @@
-# Theme Park Project
+# Retro Park Project
 This repository is used for team project assignment to build a theme park web site.
 
 ## Authors
