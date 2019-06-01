@@ -2,17 +2,20 @@
 <html lang="en">
 
 <!-- This head section contains all the invisible information about the page -->
+
 <head>
     <title>Welcome to Retro Park</title>
     <meta name="description" content="This is a website for a Retro Theme Park">
-    <meta name="author" content="B. Georgieva, A. Milosevic">
-    <meta name="keywords" content="Retro Vintage 'Back in time' 'Theme Park'"> 
+    <meta name="author" content="Bilyana Georgieva, Aleksandar Milosevic">
+    <meta name="keywords" content="Retro Vintage 'Back in time' 'Theme Park'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">       
+    <meta charset="utf-8">
 </head>
 
 <!-- This body section contains the structure for all the visble content -->
+
 <body>
+
     <!-- This is the header that is repeated across pages -->
     <header>
         <img src="images/logo.png" alt="Logo">
@@ -27,98 +30,111 @@
                 <input type="image" src="images/magnifying-glass.png" alt="Search Icon" height="30">
             </form>
         </div>
+
+        <!-- This is the primary navigation  -->
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="accomodation.html">Places to stay</a></li>
+            </ol>
+        </nav>
     </header>
-    <!-- This is the primary navigation  -->
-    <nav>
-        <a href="/index.html">Home</a>
-        <a href="/attractions.html">Attractions</a>
-        <a href="/offers.html">Offers</a>
-        <a href="">Places to stay</a>
-    </nav>
-    
-    <!-- This is the primary navigation  -->
-    <section class="welcome">
-        <img src="images/ferris-wheel.jpg" width="700" alt="Retro theme park ferris wheel">
-        <h1>Welcome back in time</h1>
-        <h3>New season opens on March 23rd</h3>
-        <div id="actionButtons">
-            <button type="button" class="actionButton">Buy a pass</button>
-            <button type="button" class="actionButton">Buy a ticket</button>
-        </div>
-    </section>
-    
-    <!-- This is the booking form  -->
-    <div id="bookingForm">
-        <form>
-            <input type="date">
-            <input type="number" name="Adults" id="adultsNumber">
-            <input type="number" name="Children" id="childrenNumber">
-            <input type="submit" value="Book Now">
-        </form>
-    </div>
 
-    <!-- This is the news and attractions section  -->
-    <section id="newsAndAttractions">
-        <h1>News and attractions</h1>
-        
-        <!-- This is the featured attraction card  -->
-        <div id="featuredAttraction">
-            <img src="images/creepy-carrousel.jpg" height=400 alt="Creepy retro carrousel">
-            <h2>Goosebumps</h2>
-            <p>Dive in the dark and unexplored part of the past by testing your limits in the theme park's newest addition!</p>
-            <button name="Learn More">Learn More</button>
-        </div>
-        
-        <!-- This is the container for attraction cards  -->        
-        <div id="attractionCards">
-            
-            <!-- This is the attraction card  -->  
-            <div class="attractionCard">
-                <img src="images/carrousel.jpg" width="200" 
-                height="200" alt="Carrousel">
-                <h3>Vintage Carrousel</h3>
-                <button class="learnMoreButton" name="Learn More">Learn More</button>
-            </div>
-            <div class="attractionCard">
-                <img src="images/night-lights.jpg" width="200" 
-                height="200" alt="Night Lights">
-                <h3>Starry Night</h3>
-                <button class="learnMoreButton" name="Learn More">Learn more</button>
-            </div>
-            <div class="attractionCard">
-                <img src="images/pony.jpg" width="200" height="200" alt="Pony">
-                <h3>Round and Round</h3>
-                <button class="learnMoreButton" name="Learn More">Learn more</button>
-            </div>
-        </div>
-    </section>
-    <!-- This is the social media strip section  -->  
-    <section class="socialMedia">
-        <h1>Social Media Channels</h1>
-        
-        <!-- This is the container for social media images -->  
-        <div id="socialMediaImagesContainer">
-            <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/sm-cute-girl.jpg" width="150" height="150" alt="Cute girl in theme park">
-            </div>
-            <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/sm-ferris-wheel-up-close.jpg" width="150" height="150" alt="Ferris wheel from up close">
-            </div>
-            <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/sm-girl-at-carrousel.jpg" width="150" height="150" alt="Young girl at carrousel">
-            </div>
-            <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/sm-teen-at-carrousel.jpg" width="150" height="150" alt="Teen at carrousel">
-            </div>
-            <div class="socialMediaImageContainer">
-                <img class="socialMediaImage" src="images/sm-turn-around-crazy.jpg" width="150" height="150" alt="People at adrenaline heavy them park ride">
-            </div>
-        </div>
-    </section>
+    <!-- This is the main content of the page -->
+    <main>
 
-    <!-- This is the footer to repeated opn every page  -->  
+        <!-- This is welcome section with hero image -->
+        <section class="welcome">
+            <img src="images/ferris-wheel.jpg" width="700" alt="Retro theme park ferris wheel">
+            <h1>Welcome back in time</h1>
+            <h3>New season opens on March 23rd</h3>
+            <div id="actionButtons">
+                <button type="button" class="actionButton">Buy a pass</button>
+                <button type="button" class="actionButton">Buy a ticket</button>
+            </div>
+        </section>
+
+        <!-- This is the booking form  -->
+        <div id="bookingForm">
+            <form>
+                <input type="date">
+                <input type="number" name="Adults" id="adultsNumber">
+                <input type="number" name="Children" id="childrenNumber">
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+
+        <!-- This is the news and attractions section  -->
+        <section id="newsAndAttractions">
+            <h1>News and attractions</h1>
+
+            <!-- This is the featured attraction card  -->
+            <div id="featuredAttraction">
+                <img src="images/creepy-carrousel.jpg" height=400 alt="Creepy retro carrousel">
+                <h2>Goosebumps</h2>
+                <p>Dive in the dark and unexplored part of the past by testing your limits in the theme park's newest
+                    addition!</p>
+                <button name="Learn More">Learn More</button>
+            </div>
+
+            <!-- This is the container for attraction cards  -->
+            <div id="attractionCards">
+
+                <!-- This is the attraction card  -->
+                <div class="attractionCard">
+                    <img src="images/carrousel.jpg" width="200" height="200" alt="Carrousel">
+                    <h3>Vintage Carrousel</h3>
+                    <button class="learnMoreButton" name="Learn More">Learn More</button>
+                </div>
+                <div class="attractionCard">
+                    <img src="images/night-lights.jpg" width="200" height="200" alt="Night Lights">
+                    <h3>Starry Night</h3>
+                    <button class="learnMoreButton" name="Learn More">Learn more</button>
+                </div>
+                <div class="attractionCard">
+                    <img src="images/pony.jpg" width="200" height="200" alt="Pony">
+                    <h3>Round and Round</h3>
+                    <button class="learnMoreButton" name="Learn More">Learn more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- This is the social media strip section  -->
+        <section class="socialMedia">
+            <h1>Social Media Channels</h1>
+
+            <!-- This is the container for social media images -->
+            <div id="socialMediaImagesContainer">
+                <div class="socialMediaImageContainer">
+                    <img class="socialMediaImage" src="images/sm-cute-girl.jpg" width="150" height="150"
+                        alt="Cute girl in theme park">
+                </div>
+                <div class="socialMediaImageContainer">
+                    <img class="socialMediaImage" src="images/sm-ferris-wheel-up-close.jpg" width="150" height="150"
+                        alt="Ferris wheel from up close">
+                </div>
+                <div class="socialMediaImageContainer">
+                    <img class="socialMediaImage" src="images/sm-girl-at-carrousel.jpg" width="150" height="150"
+                        alt="Young girl at carrousel">
+                </div>
+                <div class="socialMediaImageContainer">
+                    <img class="socialMediaImage" src="images/sm-teen-at-carrousel.jpg" width="150" height="150"
+                        alt="Teen at carrousel">
+                </div>
+                <div class="socialMediaImageContainer">
+                    <img class="socialMediaImage" src="images/sm-turn-around-crazy.jpg" width="150" height="150"
+                        alt="People at adrenaline heavy them park ride">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- This is the footer to repeated opn every page  -->
     <footer>
-        <!-- List of links in the footer  -->  
+
+        <!-- List of links in the footer  -->
         <div class="footerLinkList">
             <h3>About us</h3>
             <ul>
@@ -135,7 +151,8 @@
                 <li><a href="">Legal Notices</a></li>
             </ul>
         </div>
-        <!-- This is the a set of social media logos with link  -->  
+
+        <!-- This is the a set of social media logos with link  -->
         <div id="socialMediaButtons">
             <a href="http://tripadvisor.com">
                 <img src="images/tripadvisor-logo.png" width="50" height="50" alt="Trip Advisor Logo">
@@ -150,23 +167,28 @@
                 <img src="images/instagram-logo.png" width="50" height="50" alt="Instagram Logo">
             </a>
         </div>
-        <!-- This is the contact info section -->  
+
+        <!-- This is the contact info section -->
         <div id="contactInfo">
             <h3>Contact Us</h3>
             <address>
                 Write us at: <a href="mailto:feedback@retropark.com">feedback@retropark.com</a><br>
                 Or give us a call: <a href="tel:+13115552368">(311) 555-2368</a>
-              </address>
+            </address>
         </div>
-        <!-- This is the copyright section -->  
+
+        <!-- This is the copyright section -->
         <div id="copyright">
             <p><b>Copyright (c) Retro Park 2019</b></p>
         </div>
 
         <!-- This are the credits for the photo resources used-->
-        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-        <div>Logo made with <a href="/en/" title="Free Online Logo Maker">DesignEvo</a></div>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik"><em>Freepik</em></a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+        <div>Logo made with <a href="/en/" title="Free Online Logo Maker"><em>DesignEvo</em></a></div>
     </footer>
+    
 </body>
-
 </html>
