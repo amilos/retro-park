@@ -1,0 +1,162 @@
+/*Custom Fonts-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Oldenburg&display=swap');
+
+/*Common CSS-------------------------------------*/
+
+* {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-family: "Oldenburg", Times, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+h2 {
+  font-family: "Oldenburg", Times, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+h3 {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: #2c3e50;
+}
+
+p {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: black;
+}
+
+a {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+button, input:not([type='image']) {
+  border-radius: 20px;
+}
+
+button {
+  border-color: white;
+  background-color: #e67e22;
+  color: white;
+}
+
+button:hover {
+  border-color: #e67e22;
+  border-radius: 20px;
+  background-color: white;
+  color: #e67e22;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.breadcrumbs, .breadcrumbs * {
+  font-size: 12px;
+}
+
+
+/*Header CSS---------------------------------------*/
+
+#searchContainer form input {
+  color: #7f8c8d;
+}
+
+/*Footer CSS---------------------------------------*/
+
+#socialMediaButtons a:hover {
+  text-decoration: none;
+}
+
+#copyright *, .credits, .credits * {
+    font-size: 10px;
+}
+
+footer a {
+  font-size: 12px;
+}
+
+/*Index.html CSS---------------------------------------*/
+
+#featuredAttraction, .attractionCard{
+    background-color: white;
+}
+
+
+/*Offers.html CSS---------------------------------------*/
+
+#offersTable {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #95a5a6, 0 6px 20px 0 #95a5a6;
+}
+
+#offersTable button {
+  border-color: #e74c3c;
+  background-color: #e74c3c;
+  color: white;
+}
+
+#offersTable button:hover {
+  border-radius: 20px;
+  background-color: white;
+  color: #e74c3c;
+}
+
+#offerNamesRow th {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #e74c3c;
+}
+
+#offersTable th.available {
+  color: #34495e;
+}
+
+#offersTable th.unavailable *{
+  color: #7f8c8d;
+}
