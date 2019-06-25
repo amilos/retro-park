@@ -103,6 +103,84 @@ ul li {
   color: #7f8c8d;
 }
 
+header {
+  position: relative;
+}
+
+/* Language and Search */
+
+#languageAndSearchContainer {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Logo */
+
+#logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Language Selection */
+
+#languageSelection img {
+  height: 25px;
+}
+
+/* Search Container */
+
+#searchContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#searchContainer form * {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#searchContainer input {
+  font-size: 17px;
+  padding: 2px 10px;
+}
+
+#searchContainer i {
+  font-size: 25px;
+}
+
+/* Navigation */
+
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0px 10px;
+  border: 1px solid #67b9cc;
+  border-radius: 10px;
+  padding: 2px 7px;
+  background-color: #67b9cc;
+}
+
+
+nav ul li:hover {
+  background-color: white;
+}
+
+nav ul li * {
+  color: white;
+}
+
+nav ul li:hover * {
+  color: #67b9cc;
+  text-decoration: none;
+}
+
+
 /*Footer CSS---------------------------------------*/
 
 #socialMediaButtons a:hover {
@@ -125,6 +203,24 @@ footer a {
 
 
 /*Offers.html CSS---------------------------------------*/
+
+#offersPage {
+  background-image: url("/images/fireworks.jpg");
+}
+
+#offersPage header{
+  background-color: white;
+  margin: 20px 5%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#offersPage main {
+  background-color: white;
+  margin: 0 5%;
+  border-radius: 20px;
+  padding: 10px;
+}
 
 #offersTable {
   background-color: white;
