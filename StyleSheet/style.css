@@ -3,6 +3,9 @@
 
 /*Common CSS-------------------------------------*/
 
+/* 620 for the table 
+   720 for the footer */
+
 * {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -14,7 +17,19 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: white;
+}
+
+*:focus {
+  outline: 0;
+}
+
+* {
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+button:active {
+  transform: scale(0.95);
 }
 
 h1 {
@@ -23,7 +38,7 @@ h1 {
   font-variant: normal;
   font-weight: bold;
   font-size: 2em;
-  color: #2c3e50;
+  color: white;
 }
 
 h2 {
@@ -92,6 +107,10 @@ ul li {
   list-style-type: none;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 .breadcrumbs, .breadcrumbs * {
   font-size: 12px;
 }
@@ -103,6 +122,10 @@ ul li {
   color: #7f8c8d;
 }
 
+#searchContainer i {
+  color: #34495e;
+}
+
 header {
   position: relative;
 }
@@ -111,16 +134,27 @@ header {
 
 #languageAndSearchContainer {
   display: flex;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+}
+
+@media (min-width: 1200px) {
+  #languageAndSearchContainer {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #languageAndSearchContainer {
+    justify-content: center;
+    margin: 10px 0;
+  }
 }
 
 /* Logo */
 
 #logo {
   text-align: center;
-  margin-top: 20px;
 }
 
 /* Language Selection */
@@ -156,30 +190,27 @@ header {
 nav ul{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0px 10px;
-  border: 1px solid #67b9cc;
-  border-radius: 10px;
-  padding: 2px 7px;
-  background-color: #67b9cc;
-}
-
-
-nav ul li:hover {
-  background-color: white;
+  margin: 5px 20px;
 }
 
 nav ul li * {
-  color: white;
+  font-family: "Oldenburg", Times, serif;
+  color: #67b9cc;
+  font-weight: bolder;
+  font-size: 14pt;
 }
 
-nav ul li:hover * {
-  color: #67b9cc;
+nav ul li a:hover {
   text-decoration: none;
 }
 
+nav ul li:hover {
+  transform: scale(1.1);
+}
 
 /*Footer CSS---------------------------------------*/
 
@@ -195,49 +226,92 @@ footer a {
   font-size: 12px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #ecf0f1;
+  margin: 40px 5%;
+  border-radius: 20px;
+}
+
+footer>div {
+  margin: 20px 30px;
+}
+
+footer>div>section:not(#connect) {
+  margin-right: 40px;
+}
+
+.footerLinkList {
+  float: left;
+}
+
+.footerLinkList h3 {
+  margin-block-start: 0;
+}
+
+#connect {
+  float: right;
+}
+
+#copyright {
+  float: left;
+}
+
+/* Breadcrumbs CSS-------------------------------------*/
+.breadcrumbs *{
+  font-size: 14px;
+  color: #34495e;
+}
+
+.breadcrumbs {
+  margin-bottom: 10px;
+  margin-left: 6%;
+}
+
 /*Index.html CSS---------------------------------------*/
 
 #featuredAttraction, .attractionCard{
     background-color: white;
 }
 
-
 /*Offers.html CSS---------------------------------------*/
 
-#offersPage {
-  background-image: url("/images/fireworks.jpg");
-}
-
 #offersPage header{
-  background-color: white;
+  /* background-color: #FFF8; */
   margin: 20px 5%;
   border-radius: 20px;
   padding: 10px;
 }
 
 #offersPage main {
-  background-color: white;
+  background-color: #E57B76;
   margin: 0 5%;
   border-radius: 20px;
-  padding: 10px;
+  padding: 40px;
+  text-align: center;
 }
 
 #offersTable {
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 #95a5a6, 0 6px 20px 0 #95a5a6;
+  box-shadow: 0 4px 8px 0 #D75E72, 0 6px 20px 0 #D75E72;
+  margin: auto;
+  border-spacing: 20px;
+  margin-top: 60px;
 }
 
 #offersTable button {
-  border-color: #e74c3c;
-  background-color: #e74c3c;
-  color: white;
+  padding: 5px 10px;
+  border-width: 3px;
 }
 
 #offersTable button:hover {
   border-radius: 20px;
   background-color: white;
-  color: #e74c3c;
 }
 
 #offerNamesRow th {
@@ -246,14 +320,73 @@ footer a {
   font-variant: normal;
   font-weight: bold;
   font-size: 1.5em;
-  color: #e74c3c;
+}
+
+.firstOffer {
+  color: #E5C176;
+}
+
+button.firstOffer {
+  color: white;
+  border-color: #E5C176;
+  background-color: #E5C176;
+}
+
+button.firstOffer:hover {
+  color: #E5C176;
+}
+
+.secondOffer {
+  color: #67B9CC;
+}
+
+button.secondOffer {
+  color: white;
+  border-color: #67B9CC;
+  background-color: #67B9CC;
+}
+
+button.secondOffer:hover {
+  color: #67B9CC;
+}
+
+.thirdOffer {
+  color: #D75E72;
+}
+
+button.thirdOffer {
+  color: white;
+  border-color: #D75E72;
+  background-color: #D75E72;
+}
+
+button.thirdOffer:hover {
+  color: #D75E72;
+}
+
+.buyNowButton {
+  font-weight: bolder;
 }
 
 #offersTable th.available {
   color: #34495e;
+  font-weight: bold;
 }
 
-#offersTable th.unavailable {
+#offersTable th.unavailable strike {
   color: #7f8c8d;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
+  font-weight: lighter;
+}
+
+#pricesRow th {
+  font-size: 36pt;
+  font-weight: bolder;
+  color: #E57B76;
+}
+
+#pricesRow th sup {
+  font-size: 16pt;
+  font-weight: bolder;
+  color: #E57B76;
 }

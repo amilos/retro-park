@@ -1,196 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Welcome to Retro Park</title>
-    <meta
-      name="description"
-      content="This is the offer page of the Retro Theme Park webpage."
-    />
-    <meta name="author" content="B. Georgieva, A. Milosevic" />
-    <meta name="keywords" content="Retro Vintage 'Back in time' 'Theme Park'" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css" />
-    <script src="https://kit.fontawesome.com/f8a5a792c3.js"></script>
-  </head>
 
-  <body id="offersPage">
-    <!-- This is the header that is repeated across pages -->
-    <header>
-        <div id="logo">
-          <a href="index.html">
-            <img src="images/logo.png" height="100" alt="Logo" />
-          </a>
-        </div>
+<head>
+  <title>Welcome to Retro Park</title>
+  <meta name="description" content="This is the offer page of the Retro Theme Park webpage." />
+  <meta name="author" content="B. Georgieva, A. Milosevic" />
+  <meta name="keywords" content="Retro Vintage 'Back in time' 'Theme Park'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="StyleSheet/style.css" />
+  <script src="https://kit.fontawesome.com/f8a5a792c3.js"></script>
+</head>
 
-        <div id="languageAndSearchContainer">
-          <div id="searchContainer">
-            <form>
-              <input name="search" type="text" />
-              <div><i class="fas fa-search"></i></div>
-            </form>
-          </div>
-
-          <div id="languageSelection">
-            <a href="#">
-              <img src="images/united-kingdom.png" alt="UK Flag" />
-            </a>
-          </div>
-        </div>
-
-      <!-- This is the primary navigation  -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="attractions.html">Attractions</a></li>
-          <li><a href="offers.html">Offers</a></li>
-          <li><a href="#">Places to stay</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- These are the breadcrumbs -->
-    <div class="breadcrumbs">
-        <a href="/">Home</a> > <a>Offers</a>
+<body id="offersPage">
+  <!-- This is the header that is repeated across pages -->
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <img src="images/logo.png" height="100" alt="Logo" />
+      </a>
     </div>
 
-    <!-- This is the main part of the page -->
-    <main>
+    <div id="languageAndSearchContainer">
+      <div id="searchContainer">
+        <form autocomplete="off">
+          <input name="search" type="text" />
+          <div><i class="fas fa-search"></i></div>
+        </form>
+      </div>
 
-        <!-- This is the offers table with it's title -->
-        <h1>Choose your package now!</h1>
-        <table id="offersTable">
-            <tr id="offerNamesRow">
-                <th>Discovery</th>
-                <th>Exploration</th>
-                <th>Infinity</th>
-            </tr>
-            <tr>
-                <th class="available">Access to all attractions</th>
-                <th class="available">Access to all attractions</th>
-                <th class="available">Access to all attractions</th>
-            </tr>
-            <tr>
-                <th class="unavailable"><strike>Guaranteed parking spot</strike></th>
-                <th class="available">Guaranteed parking spot</th>
-                <th class="available">Guaranteed parking spot</th>
-            </tr>
-            <tr>
-                <th class="unavailable"><strike>"Cut the line" pass</strike></th>
-                <th class="unavailable"><strike>"Cut the line" pass</strike></th>
-                <th class="available">"Cut the line" pass</th>
-            </tr>
-            <tr id="pricesRow">
-                <th>$19.99</th>
-                <th>$29.99</th>
-                <th>$42.99</th>
-            </tr>
-            <tr>
-                <th>
-                    <button class="buyNowButton" name="Claim offer">Claim this offer</button>
-                </th>
-                <th>
-                    <button class="buyNowButton" name="Claim offer">Claim this offer</button>
-                </th>
-                <th>
-                    <button class="buyNowButton" name="Claim offer">Claim this offer</button>
-                </th>
-            </tr>
-        </table>
-    </main>
+      <div id="languageSelection">
+        <a href="#">
+          <img src="images/united-kingdom.png" alt="UK Flag" />
+        </a>
+      </div>
+    </div>
 
-    <!-- This is the footer to repeated opn every page  -->
-    <footer>
-      <!-- List of links in the footer  -->
-      <section class="footerLinkList">
-        <h3>About us</h3>
-        <ul>
-          <li><a href="#">Our History</a></li>
-          <li><a href="#">Our Mission</a></li>
-          <li><a href="#">Join Our Team</a></li>
-        </ul>
-      </section>
-      <section class="footerLinkList">
-        <h3>Terms and Conditions</h3>
-        <ul>
-          <li><a href="#">Opening Hours</a></li>
-          <li><a href="#">Theme Park Rules and Regulations</a></li>
-          <li><a href="#">Legal Notices</a></li>
-        </ul>
-      </section>
+    <!-- This is the primary navigation  -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="#">Places to stay</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- These are the breadcrumbs -->
+  <div class="breadcrumbs">
+    <a href="/">Home</a> <i class="fas fa-angle-double-right"></i> <a>Offers</a>
+  </div>
+
+  <!-- This is the main part of the page -->
+  <main>
+
+    <!-- This is the offers table with it's title -->
+    <h1>Choose your package now!</h1>
+    <table id="offersTable">
+      <tr id="offerNamesRow">
+        <th class="firstOffer">Discovery</th>
+        <th class="secondOffer">Exploration</th>
+        <th class="thirdOffer">Infinity</th>
+      </tr>
+      <tr>
+        <th class="available">Access to all attractions</th>
+        <th class="available">Access to all attractions</th>
+        <th class="available">Access to all attractions</th>
+      </tr>
+      <tr>
+        <th class="unavailable"><strike>Guaranteed parking spot</strike></th>
+        <th class="available">Guaranteed parking spot</th>
+        <th class="available">Guaranteed parking spot</th>
+      </tr>
+      <tr>
+        <th class="unavailable"><strike>"Cut the line" pass</strike></th>
+        <th class="unavailable"><strike>"Cut the line" pass</strike></th>
+        <th class="available">"Cut the line" pass</th>
+      </tr>
+      <tr id="pricesRow">
+        <th class="firstOffer">$19.<sup>99</sup></th>
+        <th class="secondOffer">$29.<sup>99</sup></th>
+        <th class="thirdOffer">$42.<sup>99</sup></th>
+      </tr>
+      <tr>
+        <th>
+          <button class="buyNowButton firstOffer" name="Claim offer">Claim this offer</button>
+        </th>
+        <th>
+          <button class="buyNowButton secondOffer" name="Claim offer">Claim this offer</button>
+        </th>
+        <th>
+          <button class="buyNowButton thirdOffer" name="Claim offer">Claim this offer</button>
+        </th>
+      </tr>
+    </table>
+  </main>
+
+  <!-- This is the footer to repeated opn every page  -->
+  <footer>
+    <div>
+    <!-- List of links in the footer  -->
+    <section class="footerLinkList">
+      <h3>About us</h3>
+      <ul>
+        <li><a href="#">Our History</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">Join Our Team</a></li>
+      </ul>
+    </section>
+
+    <section id="tos" class="footerLinkList">
+      <h3>Terms and Conditions</h3>
+      <ul>
+        <li><a href="#">Opening Hours</a></li>
+        <li><a href="#">Theme Park Rules and Regulations</a></li>
+        <li><a href="#">Legal Notices</a></li>
+      </ul>
+    </section>
+
+    <section id="connect">
       <!-- This is the a set of social media logos with link  -->
       <div id="socialMediaButtons">
         <a href="http://tripadvisor.com">
-          <img
-            src="images/tripadvisor-logo.png"
-            width="50"
-            height="50"
-            alt="Trip Advisor Logo"
-          />
+          <img src="images/tripadvisor-logo.png" width="50" height="50" alt="Trip Advisor Logo" />
         </a>
         <a href="http://facebook.com">
-          <img
-            src="images/facebook-logo.png"
-            width="50"
-            height="50"
-            alt="Facebook Logo"
-          />
+          <img src="images/facebook-logo.png" width="50" height="50" alt="Facebook Logo" />
         </a>
         <a href="http://twitter.com">
-          <img
-            src="images/twitter-logo.png"
-            width="50"
-            height="50"
-            alt="Twitter Logo"
-          />
+          <img src="images/twitter-logo.png" width="50" height="50" alt="Twitter Logo" />
         </a>
         <a href="http://instagram.com">
-          <img
-            src="images/instagram-logo.png"
-            width="50"
-            height="50"
-            alt="Instagram Logo"
-          />
+          <img src="images/instagram-logo.png" width="50" height="50" alt="Instagram Logo" />
         </a>
       </div>
 
       <!-- This is the contact info section -->
-      <section id="contactInfo">
+      <div id="contactInfo">
         <h3>Contact Us</h3>
         <address>
           Write us at:
-          <a href="mailto:feedback@retropark.com">feedback@retropark.com</a
-          ><br />
+          <a href="mailto:feedback@retropark.com">feedback@retropark.com</a><br />
           Or give us a call: <a href="tel:+13115552368">(311) 555-2368</a>
         </address>
-      </section>
+    </section>
+    </section>
+  </div>
 
-      <!-- This is the copyright section -->
-      <div id="copyright">
-        <p><b>Copyright © Retro Park 2019</b></p>
-      </div>
-
+    <!-- This is the copyright section -->
+    <div id="copyright">
+      <p><b>Copyright © Retro Park 2019</b></p>
       <!-- This are the credits for the photo resources used-->
       <div class="credits">
         Icons made by
         <a href="https://www.freepik.com/" title="Freepik"><em>Freepik</em></a>
         from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
         is licensed by
-        <a
-          href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0"
-          target="_blank"
-          >CC 3.0 BY</a
-        >
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
+          CC 3.0 BY
+        </a>
       </div>
       <div class="credits">
         Logo made with
         <a href="/en/" title="Free Online Logo Maker"><em>DesignEvo</em></a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
