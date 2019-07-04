@@ -346,28 +346,35 @@ footer>div>section:not(#connect) {
 }
 
 #newsAndAttractions h1 {
+  font-size: 2.2em;
+  margin-bottom: 50px;
+}
+
+#featuredAttraction {
+  display: flex;
+}
+
+#featuredDescription {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+#featuredDescription h2 {
   font-size: 2em;
 }
 
+#featuredImage {
+  flex: 2 1 auto;
+  max-width: 70%;
+}
+
 #featuredAttraction img {
-  grid-column: 2/5;
-  grid-row: 1/-1;
-  max-width: 400px;
-}
-
-#featuredAttraction h2 {
-  grid-column: 1/8;
-  grid-row: 1/2;
-}
-
-#featuredAttraction p {
-  grid-column: 1/8;
-  grid-row: 2/3;
-}
-
-#featuredAttraction button {
-  grid-column: 1/8;
-  grid-row: 3/4;
+  /* width: 450px; */
+   max-width: 100%; 
+   /* max-height: 450px;  */
 }
 
 /*Offers.html CSS---------------------------------------*/
