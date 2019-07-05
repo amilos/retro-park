@@ -1,537 +1,607 @@
 /*Custom Fonts-------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css?family=Oldenburg&display=swap');
 
 /*Common CSS-------------------------------------*/
 
 * {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-size: 15px;
-  color: black;
-  box-sizing: border-box;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: white;
+    background-color: white;
 }
 
 *:focus {
-  outline: 0;
+    outline: 0;
 }
 
 * {
-  transition: background 250ms ease-in-out, transform 150ms ease;
+    transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 button:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 h1 {
-  font-family: "Oldenburg", Times, serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 2em;
-  color: #34495e;
+    font-family: "Oldenburg", Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 2em;
+    color: #34495e;
 }
 
 h2 {
-  font-family: "Oldenburg", Times, serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 20px;
-  color: #2c3e50;
+    font-family: "Oldenburg", Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2c3e50;
 }
 
 h3 {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 17px;
-  color: #2c3e50;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: #2c3e50;
 }
 
 p {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-size: 15px;
-  color: black;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
 }
 
 a {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-size: 15px;
-  color: black;
-  text-decoration: none;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-a:hover, button:hover {
-  cursor: pointer;
+a:hover,
+button:hover {
+    cursor: pointer;
 }
 
-button, input:not([type='image']) {
-  border-radius: 20px;
+button,
+input:not([type='image']) {
+    border-radius: 20px;
 }
 
-button, #bookingForm form>input {
-  font-weight: bold;
-  border-color: white;
-  background-color: #e67e22;
-  color: white;
-  padding: 7px 15px;
-  border-width: 3px;
+button,
+#bookingForm form>input {
+    font-weight: bold;
+    border-color: white;
+    background-color: #e67e22;
+    color: white;
+    padding: 7px 15px;
+    border-width: 3px;
 }
 
-button:hover, #bookingForm form>input:hover {
-  border-color: #e67e22;
-  border-radius: 20px;
-  background-color: white;
-  color: #e67e22;
+button:hover,
+#bookingForm form>input:hover {
+    border-color: #e67e22;
+    border-radius: 20px;
+    background-color: white;
+    color: #e67e22;
 }
 
 ul li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 ul {
-  padding-inline-start: 0;
+    padding-inline-start: 0;
 }
 
-.breadcrumbs, .breadcrumbs * {
-  font-size: 12px;
+.breadcrumbs,
+.breadcrumbs * {
+    font-size: 12px;
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 
 /*Header CSS---------------------------------------*/
 
 #searchContainer form input {
-  color: #7f8c8d;
+    color: #7f8c8d;
 }
 
 #searchContainer i {
-  color: #34495e;
+    color: #34495e;
 }
 
 header {
-  position: relative;
-  margin: 20px 0;
+    position: relative;
+    margin: 20px 0;
 }
+
 
 /* Language and Search */
 
 #languageAndSearchContainer {
-  display: flex;
+    display: flex;
 }
 
 @media (min-width: 1200px) {
-  #languageAndSearchContainer {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
+    #languageAndSearchContainer {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
 }
 
 @media (max-width: 1200px) {
-  #languageAndSearchContainer {
-    justify-content: center;
-    margin: 10px 0;
-  }
+    #languageAndSearchContainer {
+        justify-content: center;
+        margin: 10px 0;
+    }
 }
+
 
 /* Logo */
 
 #logo {
-  text-align: center;
+    text-align: center;
 }
+
 
 /* Language Selection */
 
 #languageSelection img {
-  height: 25px;
+    height: 25px;
 }
+
 
 /* Search Container */
 
 #searchContainer form {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #searchContainer form * {
-  display: inline-block;
-  margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 #searchContainer input {
-  font-size: 17px;
-  padding: 2px 10px;
+    font-size: 17px;
+    padding: 2px 10px;
 }
 
 #searchContainer i {
-  font-size: 25px;
+    font-size: 25px;
 }
+
 
 /* Navigation */
 
-nav ul{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 5px 20px;
+    margin: 5px 20px;
 }
 
 nav ul li * {
-  font-family: "Oldenburg", Times, serif;
-  color: #67b9cc;
-  font-weight: bolder;
-  font-size: 14pt;
+    font-family: "Oldenburg", Times, serif;
+    color: #67b9cc;
+    font-weight: bolder;
+    font-size: 14pt;
 }
 
 nav ul li a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 nav ul li:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 
 /*Footer CSS---------------------------------------*/
 
 #socialMediaButtons a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-#copyright *, .credits, .credits * {
+#copyright *,
+.credits,
+.credits * {
     font-size: 10px;
 }
 
 footer a {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
-  background-color: white;
-  margin: 40px 5%;
-  border-radius: 20px;
+    background-color: white;
+    margin: 40px 5%;
+    border-radius: 20px;
 }
 
 footer>div {
-  margin: 20px 30px;
+    margin: 20px 30px;
 }
 
 footer>div>section:not(#connect) {
-  margin-right: 40px;
+    margin-right: 40px;
 }
 
 .footerLinkList {
-  float: left;
+    float: left;
 }
 
 .footerLinkList h3 {
-  margin-block-start: 0;
+    margin-block-start: 0;
 }
 
 #connect {
-  float: right;
+    float: right;
 }
 
 #copyright {
-  float: left;
+    float: left;
 }
 
+
 /* Breadcrumbs CSS-------------------------------------*/
-.breadcrumbs *{
-  font-size: 14px;
-  color: #34495e;
+
+.breadcrumbs * {
+    font-size: 14px;
+    color: #34495e;
 }
 
 .breadcrumbs {
-  margin-bottom: 10px;
-  margin-left: 6%;
+    margin-bottom: 10px;
+    margin-left: 6%;
 }
 
+
 /*Index.html CSS---------------------------------------*/
+
 
 /* #indexPage nav ul li * {
   color: white;
 } */
 
 #indexPage main {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  grid-template-rows: 100vh 2fr 1fr 1fr;
+    background-color: #f7f7f7;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    grid-template-rows: 100vh 2fr 1fr 1fr;
 }
 
 #welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+#welcome *:not(img),
+header {
+    z-index: 1;
 }
 
 #welcome img {
-  position: absolute;
-  z-index: -3;
-  max-height: 100%;
-  max-width: 100%;
-  filter: blur(2px) opacity(0.65);
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    filter: blur(2px) opacity(0.65);
 }
 
 #welcome h1 {
-  font-size: 4em;
-  text-shadow: 5px 5px 10px white;
+    font-size: 4em;
+    text-shadow: 5px 5px 10px white;
 }
 
 #welcome h3 {
-  font-size: 1.5em;
-  text-shadow: 5px 5px 10px white;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 10px white;
 }
 
-#welcome button, #bookingForm form>input {
-  background-color: #67B9CC;
-  box-shadow: 3px 3px 10px white;
+#welcome button,
+#bookingForm form>input {
+    background-color: #67B9CC;
+    box-shadow: 3px 3px 10px white;
 }
 
-#welcome button:hover, #bookingForm form>input:hover {
-  border-color: #67B9CC;
-  background-color: white;
-  color: #67B9CC;
+#welcome button:hover,
+#bookingForm form>input:hover {
+    border-color: #67B9CC;
+    background-color: white;
+    color: #67B9CC;
 }
 
 #bookingForm {
-  background-color: rgba(255,255,255,0.8);
-  padding: 30px;
-  margin: 40px;
-  border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 40px;
+    border-radius: 40px;
 }
 
 #bookingForm label {
-  margin: 10px;
-  font-weight: bold;
+    margin: 10px;
+    font-weight: bold;
 }
 
 #bookingForm input {
-  padding: 5px 10px;
+    padding: 5px 10px;
 }
 
 #bookingForm form {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #bookingForm div {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 #bookingForm form>input {
-  justify-self: flex-end;
+    justify-self: flex-end;
 }
 
-#featuredAttraction, .attractionCard{
+#featuredAttraction,
+.attractionCard {
     background-color: white;
 }
 
 #newsAndAttractions {
-  grid-column: 2/-2;
-  text-align: center;
+    grid-column: 2/-2;
+    grid-row: 2/3;
+    text-align: center;
 }
 
 #newsAndAttractions h1 {
-  font-size: 2.2em;
-  margin-bottom: 50px;
+    font-size: 3em;
+    margin: 50px 0;
 }
 
 #featuredAttraction {
-  display: flex;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, .164) 0 0 10px;
+    background-color: #fff;
+    border-radius: 40px;
+    overflow: hidden;
 }
 
 #featuredDescription {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
 }
 
 #featuredDescription h2 {
-  font-size: 2em;
+    font-size: 2em;
+}
+
+#featuredDescription p {
+    line-height: 180%;
+    font-size: 1.2em;
 }
 
 #featuredImage {
-  flex: 2 1 auto;
-  max-width: 70%;
+    max-width: 70%;
+    max-height: 450px;
 }
 
 #featuredAttraction img {
-  /* width: 450px; */
-   max-width: 100%; 
-   /* max-height: 450px;  */
+    max-width: 100%;
+}
+
+#attractionCards {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.attractionCard {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.attractionCard section {
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, .164) 0 0 10px;
+    background-color: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#firstAttraction, #secondAttraction {
+    margin-right: 30px;
+}
+
+.attractionCard img {
+    min-width: 100%;
+}
+
+.attractionCard button {
+    margin-bottom: 20px;
 }
 
 /*Offers.html CSS---------------------------------------*/
 
 #offersPage {
-  background-image: url("/images/background-gradient.jpg");
-  background-size: 100%;
+    background-image: url("/images/background-gradient.jpg");
+    background-size: 100%;
 }
 
 #offersPage main {
-  background-color: white;
-  margin: 0 5%;
-  border-radius: 20px;
-  padding: 40px;
-  text-align: center;
+    background-color: white;
+    margin: 0 5%;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
 }
 
 #offersPage main>h1 {
-  grid-column: 1/-1;
-  padding-bottom: 10px;
-  font-size: 3em;
+    grid-column: 1/-1;
+    padding-bottom: 10px;
+    font-size: 3em;
 }
 
 .offer {
-  padding: 10px;
+    padding: 10px;
 }
 
 .offer img {
-  height: 200px;
-  margin-top: 30px;
+    height: 200px;
+    margin-top: 30px;
 }
 
 .offer p {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 #firstOffer {
-  grid-column: 1 / 5;
+    grid-column: 1 / 5;
 }
 
 #secondOffer {
-  grid-column: 5 / 9;
+    grid-column: 5 / 9;
 }
 
 #thirdOffer {
-  grid-column: 9 / 13;
+    grid-column: 9 / 13;
 }
 
 .offer button {
-  padding: 5px 10px;
-  border-width: 3px;
+    padding: 5px 10px;
+    border-width: 3px;
 }
 
 .offer button:hover {
-  border-radius: 20px !important;
-  background-color: white !important;
+    border-radius: 20px !important;
+    background-color: white !important;
 }
 
 .offer h2 {
-  font-family: "Oldenburg", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bolder;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  text-decoration: underline;
-  padding-bottom: 20px;
+    font-family: "Oldenburg", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bolder;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    padding-bottom: 20px;
 }
 
-#firstOffer h2, #firstOffer .price *{
-  color: #E5C176;
+#firstOffer h2,
+#firstOffer .price * {
+    color: #E5C176;
 }
 
 #firstOffer button {
-  color: white;
-  border-color: #E5C176;
-  background-color: #E5C176;
+    color: white;
+    border-color: #E5C176;
+    background-color: #E5C176;
 }
 
 #firstOffer button:hover {
-  color: #E5C176;
+    color: #E5C176;
 }
 
-#secondOffer h2, #secondOffer .price *{
-  color: #67B9CC;
+#secondOffer h2,
+#secondOffer .price * {
+    color: #67B9CC;
 }
 
 #secondOffer button {
-  color: white;
-  border-color: #67B9CC;
-  background-color: #67B9CC;
+    color: white;
+    border-color: #67B9CC;
+    background-color: #67B9CC;
 }
 
 #secondOffer button:hover {
-  color: #67B9CC;
+    color: #67B9CC;
 }
 
-#thirdOffer h2, #thirdOffer .price * {
-  color: #D75E72;
+#thirdOffer h2,
+#thirdOffer .price * {
+    color: #D75E72;
 }
 
 #thirdOffer button {
-  color: white;
-  border-color: #D75E72;
-  background-color: #D75E72;
+    color: white;
+    border-color: #D75E72;
+    background-color: #D75E72;
 }
 
 #thirdOffer button:hover {
-  color: #D75E72;
+    color: #D75E72;
 }
 
 .buyNowButton {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 .available {
-  color: #34495e;
-  font-weight: bold;
+    color: #34495e;
+    font-weight: bold;
 }
 
 .unavailable strike {
-  color: #7f8c8d;
-  font-weight: lighter;
-  font-size: 1em;
+    color: #7f8c8d;
+    font-weight: lighter;
+    font-size: 1em;
 }
 
 .price b {
-  font-size: 36pt;
-  font-weight: bolder;
-  color: #E57B76;
+    font-size: 36pt;
+    font-weight: bolder;
+    color: #E57B76;
 }
 
 .price sup {
-  font-size: 16pt;
-  font-weight: bolder;
-  color: #E57B76;
+    font-size: 16pt;
+    font-weight: bolder;
+    color: #E57B76;
 }
