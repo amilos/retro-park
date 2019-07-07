@@ -1,9 +1,12 @@
-/*Custom Fonts-------------------------------------*/
+
+
+/* COMMON CSS -------------------------------------*/
+
+/* Custom Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Oldenburg&display=swap');
 
-/*Common CSS-------------------------------------*/
-
+/* Elements */
 * {
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -131,7 +134,18 @@ body {
 }
 
 
-/*Header CSS---------------------------------------*/
+/* Header */
+
+header {
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Logo */
+
+#logo {
+    text-align: center;
+}
 
 #searchContainer form input {
     color: #7f8c8d;
@@ -139,17 +153,6 @@ body {
 
 #searchContainer i {
     color: #34495e;
-}
-
-header {
-    position: relative;
-    margin: 20px 0;
-}
-
-#indexPage header {
-    position: absolute;
-    margin: 20px 0;
-    width: 100%;
 }
 
 
@@ -175,21 +178,10 @@ header {
 }
 
 
-/* Logo */
-
-#logo {
-    text-align: center;
-}
-
-
-/* Language Selection */
-
 #languageSelection img {
     height: 25px;
 }
 
-
-/* Search Container */
 
 #searchContainer form {
     display: flex;
@@ -212,7 +204,7 @@ header {
 }
 
 
-/* Navigation */
+/* Navigation links */
 
 nav ul {
     display: flex;
@@ -240,7 +232,7 @@ nav ul li:hover {
 }
 
 
-/*Footer CSS---------------------------------------*/
+/* Footer */
 
 #socialMediaButtons a:hover {
     text-decoration: none;
@@ -292,7 +284,7 @@ footer>div>section:not(#connect) {
 }
 
 
-/* Breadcrumbs CSS-------------------------------------*/
+/* Breadcrumbs */
 
 .breadcrumbs * {
     font-size: 14px;
@@ -305,11 +297,17 @@ footer>div>section:not(#connect) {
 }
 
 
-/*Index.html CSS---------------------------------------*/
+/* INDEX.HTML CSS ----------------------------------------------------------------------------------*/
 
 
 #indexPage {
   background-color: #f7f7f7;
+}
+
+#indexPage header {
+    position: absolute;
+    margin: 20px 0;
+    width: 100%;
 }
 
 #indexPage main {
@@ -525,7 +523,10 @@ header {
     cursor: pointer;
 }
 
-/* attractions.html CSS ----------------------------------*/
+
+
+/* ATTRACTIONS.HTML CSS ----------------------------------------------------------------------------------*/
+
 #attractionsPage {
   background-image: url("/images/background-gradient.jpg");
   background-size: 100%;
@@ -556,7 +557,6 @@ header {
   flex-wrap: wrap;
 }
 
-
 #attractions .attractionCard{
   margin-top: 40px;
   background-color: rgba(0, 0, 0, 0);
@@ -570,7 +570,6 @@ header {
   border-radius: 20px;
   overflow: hidden;
 }
-
 
 #attractions .attractionCard img {
   min-width: 100%;
@@ -586,7 +585,8 @@ header {
 }
 
 
-/* offers.html CSS ---------------------------------------*/
+
+/* OFFERS.HTML CSS ----------------------------------------------------------------------------------*/
 
 #offersPage {
     background-image: url("/images/background-gradient.jpg");
