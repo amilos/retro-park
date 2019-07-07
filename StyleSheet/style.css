@@ -709,10 +709,11 @@ header {
     font-weight: bold;
 }
 
-.unavailable strike {
+.unavailable {
     color: #7f8c8d;
     font-weight: lighter;
     font-size: 1em;
+    text-decoration: line-through;
 }
 
 .price b {
